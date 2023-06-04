@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* header/blog title */
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.header h1 {
+    font-size: 60px;
+}
+
+/* topnav */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ffd900;
+    color: rgb(0, 0, 0);
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+   padding-left: 20px;
+}
+
+.fakeimage {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin: 1px auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #7e3737;
+    margin-top: 20px;
+}
+
+@media screen (max-width: 800px) {
+    .leftcolumn .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen (max-width: 400px) {
+    .topnav a {
+        float: none
+        width: 100%
+    }
+    
+}
